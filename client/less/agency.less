@@ -167,10 +167,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-position: center center;
 	.background-cover;
 	text-align: center;
 	color: white;
@@ -288,8 +284,8 @@ section {
                     h4 {
                         margin: 0;
                     }
-                }                
-            }            
+                }
+            }
         }
         .portfolio-caption {
         	max-width: 400px;
@@ -574,7 +570,7 @@ section#contact {
 	   font-weight: 700;
 	   color: @gray-lighter;
 	}
-	:-ms-input-placeholder {  
+	:-ms-input-placeholder {
 	   .heading-font;
 	   font-weight: 700;
 	   color: @gray-lighter;
@@ -699,8 +695,8 @@ ul.social-buttons {
                 -webkit-transform: rotate(90deg);
                 /* Safari and Chrome */
                 z-index:1052;
-            }            
-        }        
+            }
+        }
     }
     .modal-backdrop {
     	opacity: 0;
@@ -730,4 +726,22 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-primary;
+}
+
+// Video background
+#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(img/bg_dddd.jpg) no-repeat;
+	background-size: cover;
 }

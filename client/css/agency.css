@@ -151,8 +151,8 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #000;
-  font-family: 'Rock Salt', cursive;
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
@@ -180,7 +180,7 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: black;
+  color: white;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -226,17 +226,12 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-color: white;
-  /*background-image: url('../img/header-bg.jpg');*/
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: black;
+  color: white;
 }
 header .intro-text {
   padding-top: 100px;
@@ -253,7 +248,7 @@ header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -273,7 +268,7 @@ header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
   }
@@ -740,14 +735,19 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
-
-/* home banner*/
-.cta_container{text-align: center;}
-.rsvp_cta{display:block; font-size: 40px; margin-bottom: 15px;}
-.social_media_icon{width: 100px; height:auto;margin: 0 8px;}
-
-@media (max-width: 768px) {
-  .social_media_icon{width: 60px; height:auto;margin: 0 8px;}
+#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(img/bg_dddd.jpg) no-repeat;
+  background-size: cover;
 }
-

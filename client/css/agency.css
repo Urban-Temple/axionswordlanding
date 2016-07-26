@@ -216,10 +216,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-color: yellow;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -744,4 +740,20 @@ body {
 }
 .character {
   margin-right: 28px;
+}
+#bgvid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(img/bg_dddd.jpg) no-repeat;
+  background-size: cover;
 }

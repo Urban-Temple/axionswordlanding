@@ -34,4 +34,7 @@ jspm_packages
 .npm
 
 # Optional REPL history
-.node_repl_history
+i.node_repl_history
+
+# Mac OS X
+.DS_Store

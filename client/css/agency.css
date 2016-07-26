@@ -149,6 +149,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
+  margin-bottom: 0;
 }
 .navbar-custom .navbar-brand {
   width: 250px;
@@ -193,8 +194,8 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
+    background-color: white;
+    padding: 15px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -224,6 +225,8 @@ header {
   color: black;
 }
 header .intro-text {
+  color: white;
+  text-shadow: 2px 2px #000;
   padding-top: 100px;
   padding-bottom: 50px;
 }
@@ -283,6 +286,9 @@ section h3.section-subheading {
   section {
     padding: 150px 0;
   }
+}
+#services {
+  background: #fff;
 }
 .service-heading {
   margin: 15px 0;
@@ -741,19 +747,6 @@ body {
 .character {
   margin-right: 28px;
 }
-#bgvid {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(img/bg_dddd.jpg) no-repeat;
-  background-size: cover;
+#vide_video {
+  position: inherit !important;
 }

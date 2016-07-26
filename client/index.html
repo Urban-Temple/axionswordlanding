@@ -35,11 +35,6 @@
 </head>
 
 <body id="page-top" class="index">
-    <!-- video background -->
-    <video autoplay loop poster="img/bg_dddd.jpg" id="bgvid">
-      <source src="https://s3-us-west-1.amazonaws.com/urbantemple/logo/dddd.mp4" type="video/mp4">
-    </video>
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
@@ -58,19 +53,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#portfolio">Count me in!</a>
                     </li>
                 </ul>
             </div>
@@ -93,6 +79,9 @@
             </div>
         </div>
     </header>
+
+    <!-- video background -->
+    <div id="vide_video"></div>
 
     <!-- Services Section -->
     <section id="services">
@@ -667,10 +656,28 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
 
     <script>
         !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s); js.id=id;js.async=true;js.src="https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=q8008fl83g0n8p74u5p76a7vl7";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","mu-bootjs");
     </script>
+
+    <script>
+        $( document ).ready(function() {
+            $('#vide_video').vide('https://s3-us-west-1.amazonaws.com/urbantemple/logo/dddd.mp4', {
+                playbackRate: 1,
+                muted: true,
+                loop: true,
+                autoplay: true,
+                position: '50% 50%', // Similar to the CSS `background-position` property.
+                posterType: 'detect', // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
+                resizing: true, // Auto-resizing, read: https://github.com/VodkaBears/Vide#resizing
+                bgColor: 'transparent', // Allow custom background-color for Vide div,
+                className: 'haha' // Add custom CSS class to Vide div
+            });
+        });
+    </script>
+
 
 </body>
 

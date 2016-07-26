@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-custom {
 	background-color: @gray-darker;
 	border-color: transparent;
+    margin-bottom: 0;
 	.navbar-brand {
 		width:250px;
         height:auto;
@@ -130,8 +131,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:768px) {
     .navbar-custom {
-    	background-color: transparent;
-        padding: 25px 0;
+    	//background-color: transparent;
+        background-color: white;
+        padding: 15px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -163,7 +165,9 @@ header {
 	text-align: center;
 	color: black;
 	.intro-text {
-		padding-top: 100px;
+      color: white;
+      text-shadow: 2px 2px #000;
+      padding-top: 100px;
 		padding-bottom: 50px;
 		.intro-lead-in {
 			.serif-font;
@@ -232,6 +236,7 @@ section {
 
 // Services Section
 
+#services{background: #fff;}
 .service-heading {
 	margin: 15px 0;
 	text-transform: none;
@@ -727,19 +732,4 @@ body {
 .character{margin-right:28px;}
 
 // Video background
-#bgvid {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -100;
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-	background: url(img/bg_dddd.jpg) no-repeat;
-	background-size: cover;
-}
+#vide_video{position: inherit !important;}

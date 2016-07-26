@@ -151,14 +151,8 @@ fieldset[disabled] .btn-xl.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #000;
-  font-family: 'Rock Salt', cursive;
-}
-.navbar-custom .navbar-brand:hover,
-.navbar-custom .navbar-brand:focus,
-.navbar-custom .navbar-brand:active,
-.navbar-custom .navbar-brand.active {
-  color: #fec503;
+  width: 250px;
+  height: auto;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -189,12 +183,12 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: white;
+  color: yellow;
   background-color: #fed136;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: white;
+  color: pink;
   background-color: #fec503;
 }
 @media (min-width: 768px) {
@@ -207,7 +201,6 @@ fieldset[disabled] .btn-xl.active {
     border: none;
   }
   .navbar-custom .navbar-brand {
-    font-size: 2em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -221,13 +214,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
-  }
 }
 header {
-  background-color: white;
-  /*background-image: url('../img/header-bg.jpg');*/
+  background-color: yellow;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -253,7 +242,7 @@ header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
 }
@@ -273,7 +262,7 @@ header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 75px;
     margin-bottom: 50px;
   }
@@ -740,14 +729,19 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
-
-
-/* home banner*/
-.cta_container{text-align: center;}
-.rsvp_cta{display:block; font-size: 40px; margin-bottom: 15px;}
-.social_media_icon{width: 100px; height:auto;margin: 0 8px;}
-
-@media (max-width: 768px) {
-  .social_media_icon{width: 60px; height:auto;margin: 0 8px;}
+.cta_container {
+  text-align: center;
 }
-
+.rsvp_cta {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.social_media_icon {
+  width: 30px;
+  height: auto;
+  margin: 0 8px;
+}
+.character {
+  margin-right: 28px;
+}

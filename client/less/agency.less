@@ -84,14 +84,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: @gray-darker;
 	border-color: transparent;
 	.navbar-brand {
-		color: @theme-primary;
-		.script-font;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-        	color: darken(@theme-primary, 10%);
-        }
+		width:250px;
+        height:auto;
 	}
 	.navbar-collapse {
 		border-color: fade(white, 2%);
@@ -113,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
-    			color: white;
+    			color: black;
     			&:hover,
     			&:focus {
     				color: @theme-primary;
@@ -124,12 +118,12 @@ h1, h2, h3, h4, h5, h6 {
     }
 	.navbar-nav>.active>a {
 		border-radius: 0;
-		color: white;
+		color: yellow;
 		background-color: @theme-primary;
 	}
 	.navbar-nav>.active>a:hover,
 	.navbar-nav>.active>a:focus {
-		color: white;
+		color: pink;
 		background-color: darken(@theme-primary, 10%);
 	}
 }
@@ -143,7 +137,6 @@ h1, h2, h3, h4, h5, h6 {
         transition: padding 0.3s;
         border: none;
 	    .navbar-brand {
-	        font-size: 2em;
 	        -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
 	        transition: all 0.3s;
@@ -161,19 +154,18 @@ h1, h2, h3, h4, h5, h6 {
 		background-color: @gray-darker;
 		padding: 10px 0;
 		.navbar-brand {
-			font-size: 1.5em;
 		}
 	}
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
+	background-color: yellow;
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
 	.background-cover;
 	text-align: center;
-	color: white;
+	color: black;
 	.intro-text {
 		padding-top: 100px;
 		padding-bottom: 50px;
@@ -209,7 +201,7 @@ header {
 			.intro-heading {
 				.heading-font;
 				font-weight: 700;
-				font-size: 75px;
+				font-size: 50px;
 				line-height: 75px;
 				margin-bottom: 50px;
 			}
@@ -731,3 +723,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @theme-primary;
 }
+
+.cta_container{text-align: center;}
+.rsvp_cta{display:block; font-size: 40px; margin-bottom: 15px;}
+.social_media_icon{width: 30px; height:auto;margin: 0 8px;}
+.character{margin-right:28px;}

@@ -36,6 +36,96 @@ a:active,
 a.active {
   color: #fec503;
 }
+/***** Main Responsive Classes *****/
+@media screen and (max-width: 767px) {
+  p,
+  li {
+    font-size: 22px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  p,
+  li {
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  p,
+  li {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  p,
+  li {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .res-pad-default {
+    padding: 18px 36px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .res-pad-default {
+    padding: 30px 48px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .res-pad-default {
+    padding: 50px 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .res-pad-default {
+    padding: 80px 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 767px), (min-width: 768px) and (max-width: 991px), (min-width: 992px) and (max-width: 1199px), screen and (min-width: 1200px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h3 {
+    font-size: 18px;
+  }
+}
 h1,
 h2,
 h3,
@@ -195,28 +285,21 @@ fieldset[disabled] .btn-xl.active {
   color: pink;
   background-color: #fec503;
 }
-@media (min-width: 768px) {
-  .navbar-custom {
-    background-color: white;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-    border: none;
-  }
-  .navbar-custom .navbar-brand {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  .navbar-custom .navbar-nav > .active > a {
-    border-radius: 3px;
-  }
+.navbar-custom {
+  background-color: white;
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  transition: padding 0.3s;
+  border: none;
 }
-@media (min-width: 768px) {
-  .navbar-custom.affix {
-    background-color: #222222;
-    padding: 10px 0;
-  }
+.navbar-custom .navbar-brand {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar-custom.affix {
+  background-color: #222222;
+  padding: 10px 0;
 }
 header {
   -webkit-background-size: cover;
@@ -267,11 +350,17 @@ header .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+@media (max-width: 768px) {
+  header .intro-text .intro-heading {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+}
 section {
   padding: 100px 0;
 }
 section h2.section-heading {
-  font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
@@ -281,19 +370,52 @@ section h3.section-subheading {
   text-transform: none;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 45px;
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 100px 0 40px 0;
   }
 }
-#services {
+#headstrike {
   background: #fff;
 }
 .service-heading {
   margin: 15px 0;
   text-transform: none;
+}
+.headstrike-title {
+  font-family: "Rock Salt";
+}
+.slogan {
+  margin-top: 60px;
+}
+@media screen and (max-width: 767px) {
+  .slogan {
+    text-align: left;
+  }
+}
+.mission_container {
+  font-size: 19px;
+  text-align: center;
+  font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  .mission_container {
+    text-align: left;
+  }
+}
+.about_body_container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about_body_container ul {
+  margin-left: 110px;
+}
+@media (max-width: 768px) {
+  .about_body_container ul {
+    margin-left: 0px;
+  }
 }
 #portfolio .portfolio-item {
   margin: 0 0 15px;
@@ -745,8 +867,14 @@ body {
   height: auto;
   margin: 0 8px;
 }
-.character {
-  margin-right: 28px;
+.character_container {
+  margin-top: 30px;
+}
+.character_container .character.man1 {
+  width: 80px;
+}
+.character_container .character.woman1 {
+  width: 80px;
 }
 #vide_video {
   position: inherit !important;

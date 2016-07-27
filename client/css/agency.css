@@ -182,6 +182,9 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   outline: none;
 }
+.navbar-custom .navigation_menu {
+  margin-top: 16px;
+}
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
   color: yellow;
@@ -195,7 +198,6 @@ fieldset[disabled] .btn-xl.active {
 @media (min-width: 768px) {
   .navbar-custom {
     background-color: white;
-    padding: 15px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;

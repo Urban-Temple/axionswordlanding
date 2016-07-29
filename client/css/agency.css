@@ -373,6 +373,11 @@ section h2.section-heading {
   margin-top: 0;
   margin-bottom: 15px;
 }
+section h2.subheading {
+  color: #36bdfe;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 section h3.section-subheading {
   font-size: 16px;
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -380,6 +385,11 @@ section h3.section-subheading {
   font-style: italic;
   font-weight: 400;
   margin-bottom: 45px;
+}
+section .timeline-heading h4 {
+  font-weight: 300;
+  margin-bottom: 18px;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   section {
@@ -872,7 +882,7 @@ ul.social-buttons li a:active {
 }
 ::selection {
   text-shadow: none;
-  background: #36bdfe;
+  background: #bae9ff;
 }
 img::selection {
   background: transparent;
@@ -943,6 +953,9 @@ body {
 }
 #vide_video {
   position: inherit !important;
+}
+.journey-cta {
+  cursor: pointer;
 }
 #footer {
   text-align: center;

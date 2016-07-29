@@ -178,8 +178,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">The foundation of our practice</h2>
                                 <h4>Dae Han Mu Do Gwan (1997 - 2010)</h4>
-                                <h4 class="subheading">The Foundation of our Practice</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">In a quiet suburb in Washington Sung Baek 75th Grandmaster of Dong
@@ -195,8 +195,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">Success in martial arts society</h2>
                                 <h4>World Swordsman Federation (2009)</h4>
-                                <h4 class="subheading">Success in martial arts society</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">In 2009, At the United States Kuo Shu Federation Tournament held
@@ -213,8 +213,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">Sharing knowledge with healers</h2>
                                 <h4>Daosource (2012)</h4>
-                                <h4 class="subheading">Sharing knowledge with healers</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">In 2012 Master Jonah Chin, Master Lina Kim, Master Ken Kang expanded
@@ -230,8 +230,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">Opening our doors to the public</h2>
                                 <h4>Qi Club (기회) (2015)</h4>
-                                <h4 class="subheading">Opening our doors to the public</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">In 2014 Daosource team moved to Victoria,
@@ -248,8 +248,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">Creating a community</h2>
                                 <h4>Urban Temple (2016)</h4>
-                                <h4 class="subheading">Creating a community</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">In 2015, we made the move to San Francisco founding the Urban
@@ -265,8 +265,8 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
+                                <h2 class="subheading">Healing through having fun</h2>
                                 <h4>Axion Sword (2016 - present)</h4>
-                                <h4 class="subheading">Healing through having fun</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Through our experiences we learned one of the most effective
@@ -278,7 +278,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image">
+                        <div class="timeline-image journey-cta">
                             <h4>Be Part
                                 <br>Of Our
                                 <br>Journey!</h4>
@@ -445,6 +445,10 @@
         var jq = $;
         $(".mu-rsvp-btn").bind('DOMSubtreeModified', function (e) {
             jq(e.target).find('img').attr('src', 'img/social_media/meetup_rsvp.gif');
+        });
+
+        $(".journey-cta").on("click", function(){
+            window.location.href = 'https://www.meetup.com/foamsword/';
         });
     });
 </script>

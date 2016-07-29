@@ -39,6 +39,12 @@ a.active {
 .brand-light-bg {
   background-color: #edf9ff;
 }
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
 /***** Main Responsive Classes *****/
 @media screen and (max-width: 767px) {
   p,
@@ -55,13 +61,13 @@ a.active {
 @media (min-width: 992px) and (max-width: 1199px) {
   p,
   li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
   p,
   li {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -136,7 +142,6 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
 }
 .img-centered {
@@ -153,7 +158,6 @@ h6 {
   background-color: #36bdfe;
   border-color: #36bdfe;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
 }
 .btn-primary:hover,
@@ -197,7 +201,6 @@ fieldset[disabled] .btn-primary.active {
   background-color: #36bdfe;
   border-color: #36bdfe;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
   font-size: 18px;
@@ -245,7 +248,8 @@ fieldset[disabled] .btn-xl.active {
   margin-bottom: 0;
 }
 .navbar-custom .navbar-brand {
-  width: 250px;
+  width: 220px;
+  padding: 8px 0px;
   height: auto;
 }
 .navbar-custom .navbar-collapse {
@@ -255,7 +259,6 @@ fieldset[disabled] .btn-xl.active {
   background-color: #36bdfe;
   border-color: #36bdfe;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   color: white;
   font-size: 12px;
 }
@@ -265,7 +268,6 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .nav li a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -281,12 +283,11 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
-  color: yellow;
+  color: white;
   background-color: #36bdfe;
 }
 .navbar-custom .navbar-nav > .active > a:hover,
 .navbar-custom .navbar-nav > .active > a:focus {
-  color: pink;
   background-color: #03acfe;
 }
 .navbar-custom {
@@ -300,10 +301,6 @@ fieldset[disabled] .btn-xl.active {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-}
-.navbar-custom.affix {
-  background-color: #222222;
-  padding: 10px 0;
 }
 header {
   -webkit-background-size: cover;
@@ -327,7 +324,6 @@ header .intro-text .intro-lead-in {
 }
 header .intro-text .intro-heading {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
@@ -347,7 +343,6 @@ header .intro-text .intro-heading {
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
     line-height: 75px;
@@ -357,7 +352,6 @@ header .intro-text .intro-heading {
 @media (max-width: 768px) {
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
     font-size: 40px;
   }
 }
@@ -414,12 +408,12 @@ section h3.section-subheading {
     text-align: left;
   }
 }
-.about_body_container h3 {
+.about_body_container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 .about_body_container ul {
-  margin-left: 110px;
+  margin-left: 30px;
 }
 @media (max-width: 768px) {
   .about_body_container ul {
@@ -661,7 +655,7 @@ section h3.section-subheading {
     min-height: 170px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 100px;
+    padding: 0 20px 20px 30px;
   }
   .timeline > li .timeline-image {
     width: 170px;
@@ -672,7 +666,7 @@ section h3.section-subheading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 100px 20px 20px;
+    padding: 0 30px 20px 20px;
   }
 }
 .team-member {
@@ -722,27 +716,23 @@ section#contact .form-control:focus {
 }
 section#contact ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
 section#contact :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
@@ -756,14 +746,12 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 ul.social-buttons {
@@ -901,14 +889,26 @@ body {
 .social_media_icon img {
   height: 100%;
 }
-.character_container {
-  margin-top: 30px;
-}
-.character_container .character.man1 {
+.facebook_rsvp_logo {
+  background-image: url("../img/social_media/facebook-128.png");
+  background-repeat: no-repeat;
+  display: inline-block;
   width: 80px;
+  height: 80px;
+  margin-left: 7px;
+  background-size: cover;
+  margin-bottom: -36px;
 }
-.character_container .character.woman1 {
-  width: 80px;
+.character_collection {
+  text-align: center;
+  margin-bottom: 29px;
+  margin-top: -31px;
+}
+.character_collection .character {
+  width: 100px;
+}
+.character_collection .character.ken {
+  width: 70px;
 }
 #vide_video {
   position: inherit !important;

@@ -35,21 +35,18 @@
     });
 
     if ($(".navbar-custom").hasClass("affix")){
-        $(".navbar-brand").attr("src", "https://s3-us-west-1.amazonaws.com/urbantemple/logo/logo_main_wht.png");
-        $("nav li a").css("color", "#fff");
+        $(".navbar-brand").attr("src", "../img/logos/woman_logo_blu.png");
+        $("#mainNav").css("border-bottom", "1px solid black");
     }
     $('#mainNav').on( 'affixed-top.bs.affix', function () {
         console.log('unaff');
-        $(".navbar-brand").attr("src", "https://s3-us-west-1.amazonaws.com/urbantemple/logo/logo_main_blk.png");
-        $("nav li a").css("color", "#000");
+        $(".navbar-brand").attr("src", "../img/logos/man_logo_blk.png");
+        $("#mainNav").css("border-bottom", "none");
     });
 
     $('#mainNav').on( 'affix.bs.affix', function () {
         console.log('aff');
-        $(".navbar-brand").attr("src", "https://s3-us-west-1.amazonaws.com/urbantemple/logo/logo_main_wht.png");
-        $("nav li a").css("color", "#fff");
+        $(".navbar-brand").attr("src", "../img/logos/woman_logo_blu.png");
+        $("#mainNav").css("border-bottom", "1px solid black");
     });
-
-
-
 })(jQuery); // End of use strict

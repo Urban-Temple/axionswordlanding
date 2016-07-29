@@ -405,7 +405,8 @@ section h3.section-subheading {
   }
 }
 .slogan p {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 @media screen and (max-width: 767px) {
   .slogan p {

@@ -163,11 +163,15 @@ h1, h2, h3, h4, h5, h6 {
 		width:220px;
         padding: 8px 0px;
         height:auto;
+        @media @phones {
+          margin-left: 30px;
+        }
 	}
 	.navbar-collapse {
 		border-color: fade(white, 2%);
 	}
 	.navbar-toggle {
+        margin-top: 24px;
 		background-color: @brand-primary;
 		border-color: @brand-primary;
 		.heading-font;
@@ -331,9 +335,14 @@ section {
 
 .slogan {
   margin-top: 60px;
-
   @media @phones {
     text-align: left;
+  }
+  p {
+    font-size: 25px;
+    @media @phones {
+      font-size: 18px;
+    }
   }
 }
 
@@ -913,6 +922,18 @@ body {
   }
   .character.ken{
     width: 70px;
+  }
+  @media @phones {
+    margin-top: 20px;
+    .character {
+      width: 70px;
+    }
+    .character.ken{
+      width: 45px;
+    }
+  }
+  @media @tablets {
+    margin-top: 20px;
   }
 }
 

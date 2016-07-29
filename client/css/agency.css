@@ -252,10 +252,16 @@ fieldset[disabled] .btn-xl.active {
   padding: 8px 0px;
   height: auto;
 }
+@media screen and (max-width: 767px) {
+  .navbar-custom .navbar-brand {
+    margin-left: 30px;
+  }
+}
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbar-custom .navbar-toggle {
+  margin-top: 24px;
   background-color: #36bdfe;
   border-color: #36bdfe;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -396,6 +402,14 @@ section h3.section-subheading {
 @media screen and (max-width: 767px) {
   .slogan {
     text-align: left;
+  }
+}
+.slogan p {
+  font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+  .slogan p {
+    font-size: 18px;
   }
 }
 .mission_container {
@@ -909,6 +923,22 @@ body {
 }
 .character_collection .character.ken {
   width: 70px;
+}
+@media screen and (max-width: 767px) {
+  .character_collection {
+    margin-top: 20px;
+  }
+  .character_collection .character {
+    width: 70px;
+  }
+  .character_collection .character.ken {
+    width: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .character_collection {
+    margin-top: 20px;
+  }
 }
 #vide_video {
   position: inherit !important;

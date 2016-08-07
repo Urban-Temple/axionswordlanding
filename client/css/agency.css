@@ -960,3 +960,24 @@ body {
   text-align: center;
   margin-top: 52px;
 }
+.cta-btn {
+  background-color: #36bdfe;
+  border-radius: 0px;
+  width: 204px;
+  height: 60px;
+  border: none;
+}
+.cta-btn-copy {
+  color: white;
+  font-size: 27px;
+}
+.cta-btn:hover {
+  background-color: #36bdfe;
+  text-decoration: none;
+  font-style: inherit;
+}
+.cta-btn:hover .cta-btn-copy {
+  color: white;
+  text-decoration: none;
+  font-style: inherit;
+}
